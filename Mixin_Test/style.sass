@@ -1,0 +1,44 @@
+$phones: 0
+$whide-phones: 480px
+$tablets: 768px
+$small-desctops: 992px
+$lg-desctops: 1200px
+$xlg-desctops: 1441px
+
+@mixin respond-to($media)
+  @if $media == phones
+    @media only screen and (max-width: $whide-phones - 1)
+      @content
+  @else if $media == whide-phones
+    @media only screen and (min-width: $whide-phones) and (max-width: $tablets - 1)
+      @content
+  @else if $media == tablets
+    @media only screen and (min-width: $tablets) and (max-width: $small-desctops - 1)
+      @content
+  @else if $media == small-desctops
+    @media only screen and (min-width: $small-desctops) and (max-width: $lg-desctops - 1)
+      @content
+  @else if $media == lg-desctops
+    @media only screen and (min-width: $lg-desctops) and (max-width: $xlg-desctops - 1)
+      @content
+  @else if $media == xlg-desctops
+    @media only screen and (min-width: $xlg-desctops)
+      @content
+
+
+.block
+  width: 200px
+  height: 200px
+  background-color: lightcoral
+  @include respond-to(phones)
+    background-color: red
+  @include respond-to(whide-phones)
+    background-color: green
+  @include respond-to(tablets)
+    background-color: blue
+  @include respond-to(small-desctops)
+    background-color: yellow
+  @include respond-to(lg-desctops)
+    background-color: orangered
+  @include respond-to(xlg-desctops)
+    background-color: black
