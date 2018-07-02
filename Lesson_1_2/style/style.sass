@@ -26,14 +26,6 @@ $xlg-desctops: 1441px
     @media only screen and (min-width: $xlg-desctops)
       @content
 
-
-/*.block
-  width: 200px
-  height: 200px
-  background-color: lightcoral
-  @include respond-to(phones)
-    background-color: red
-
 *
   margin: 0
   padding: 0
@@ -48,13 +40,16 @@ h2
   font-weight: 400
   line-height: 36px
   text-align: left
+
 .productName
   max-width: 1280px
   background-color:  #445161
   padding-top: 50px
   box-sizing: border-box
+
   .text
     margin-bottom: 30px
+
     h2
       font-family: 'Roboto', sans-serif
       color:  #fff
@@ -87,6 +82,7 @@ h2
         margin-left: 14%
       @include respond-to(whide-phones)
         margin-left: 7%
+
   .image
     background-color:  #ffffff
     height: 214px
@@ -96,8 +92,10 @@ h2
   max-width: 1280px
   box-sizing: border-box
   padding-top: 50px
+
   h2
     margin-bottom: 30px
+
   p
     font-family: 'Roboto', sans-serif
     color:  #333333
@@ -106,6 +104,7 @@ h2
     line-height: 24px
     text-align: left
     margin-bottom: 20px
+
   .image
     background-color:  #445161
     height: 245px
@@ -116,10 +115,12 @@ h2
   box-sizing: border-box
   padding-top: 50px
   background-color: #f5f5f5
+
   h2
     width: 100%
     margin-bottom: 25px
     text-align: center
+
   li
     font-family: 'Roboto', sans-serif
     color:  #333333
@@ -140,11 +141,14 @@ h2
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+
   h2
     width: 100%
     margin-bottom: 25px
     text-align: center
+
   .scrinBlock
+
     .image
       background-color:  #445161
       width: 200px
@@ -158,6 +162,10 @@ h2
         margin-top: 15px
       @include respond-to(whide-phones)
         margin-top: 0
+      @include respond-to(phones)
+        float: none
+        width: 100%
+
     h3
       font-family: 'Roboto', sans-serif
       color:  #445161
@@ -166,6 +174,13 @@ h2
       line-height: 30px
       text-align: left
       margin-bottom: 15px
+      @include respond-to(small-desctops)
+        margin-top: 15px
+      @include respond-to(tablets)
+        margin-top: 20px
+      @include respond-to(whide-phones)
+        margin-top: 0
+
     p
       font-family: 'Roboto', sans-serif
       color:  #333333
@@ -180,72 +195,115 @@ h2
       @include respond-to(whide-phones)
         margin-bottom: 40px
 
-
 .reviews
   max-width: 1280px
   background-color: #f5f5f5
   box-sizing: border-box
   padding-top: 50px
   display: flex
-  justify-content: flex-start
+  justify-content: center
   flex-wrap: wrap
+
   h2
     width: 100%
     margin-bottom: 25px
     text-align: center
+
   .reviewBlock
-    width: 450px
-    height: 121px
-    background: url("../images/bg_review.png") no-repeat
     position: relative
-    margin-left: 93px
     padding: 16px 20px 0 27px
-    p
-      font-family: 'Roboto', sans-serif
-      color:  #333333
-      font-size: 14px
-      font-style: italic
-      line-height: 18px
-      margin-bottom: 5px
-      text-align: left
-  blockquote:before
-    content: "\201C"
-    font-family: serif
-    position: absolute
-    left: -80px
-    top: 0px
-    color: white
-    background-color:  #445161
-    width: 75px
-    height: 75px
-    border-radius: 50%
-  cite
-    font-family: 'Roboto', sans-serif
-    color:  #989898
-    font-size: 14px
-    font-weight: 400
-    line-height: 18px
-    text-align: left
+    border: none
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @include respond-to(whide-phones)
+      align-items: center
+      flex-direction: column
+    @include respond-to(phones)
+      align-items: center
+      flex-direction: column
+
+    .photo
+      background-color:  #445161
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      margin-right: 25px
+      @include respond-to(whide-phones)
+        margin-bottom: 25px
+        margin-right: 0
+      @include respond-to(phones)
+        margin-bottom: 25px
+        margin-right: 0
+
+    .text
+      background: #ebebeb
+      max-width: 380px
+      padding: 15px
+      position: relative
+
+      .arrow
+        position: absolute
+        background: #ebebeb
+        width: 20px
+        height: 20px
+        left: -11px
+        top: 25px
+        transform: rotate(45deg)
+        @include respond-to(whide-phones)
+          top: -10px
+          left: 50%
+        @include respond-to(phones)
+          top: -10px
+          left: 50%
+
+      p
+        font-family: 'Roboto', sans-serif
+        color:  #333333
+        font-size: 14px
+        font-style: italic
+        line-height: 18px
+        margin-bottom: 5px
+        text-align: left
+
+      cite
+        font-family: 'Roboto', sans-serif
+        color:  #989898
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+        text-align: left
 
 .buyNow
   max-width: 1280px
   box-sizing: border-box
   padding-top: 50px
   padding-bottom: 49px
-  display: flex
-  justify-content: center
-  align-items: flex-end
-  flex-wrap: wrap
+
+  .prices
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    flex-wrap: wrap
+    @include respond-to(lg-desctops)
+      flex-wrap: nowrap
+    @include respond-to(xlg-desctops)
+      flex-wrap: nowrap
+
   h2
     width: 100%
-    margin-bottom: 25px
     text-align: center
+    margin-bottom: 25px
+
   .product
-    width: 300px
-    height: 306px
     background-color: #445162
-    margin-right: 45px
     border-radius: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 20px
+    margin: 10px
+
     h3
       font-family: 'Roboto', sans-serif
       color:  #ffffff
@@ -253,6 +311,7 @@ h2
       font-weight: 400
       line-height: 55px
       text-align: center
+
     .price
       font-family: 'Roboto', sans-serif
       color:  #445162
@@ -261,13 +320,13 @@ h2
       line-height: 71px
       text-align: center
       background-color: #fff
-      width: 296px
-      height: 71px
-      margin-left: 2px
+      width: 98%
+
     ol
       margin-left: 20px
       margin-top: 19px
       margin-bottom: 10px
+
     li
       list-style-position: inside
       font-family: 'Roboto', sans-serif
@@ -276,47 +335,62 @@ h2
       font-weight: 400
       line-height: 24px
       text-align: left
+
     button
       border-radius: 5px
       background-color:  #ffffff
-      width: 260px
-      height: 40px
+      width: 80%
       font-family: 'Roboto', sans-serif
       color:  #445161
       font-size: 18px
       font-weight: 700
-      line-height: 18px
+      line-height: 40px
       text-align: center
-      margin-left: 20px
       transition-duration: 0.4s
       cursor: pointer
+
     button:hover
       background-color: #aeaeae
       color: #fff
+
     button:active
       box-shadow: 0 0 4.85px 0.15px rgba(33, 33, 33, 0.35)
       position: relative
       top: 2px
-  .product_2
-    height: 404px
-  .product_3
-    height: 499px
+
 .contacts
   max-width: 1280px
   box-sizing: border-box
   padding-top: 50px
+  padding-bottom: 50px
   background-color: #445162
   display: flex
   justify-content: center
   flex-wrap: wrap
+
   h2
     width: 100%
     margin-bottom: 25px
     text-align: center
     color: #fff
+
   form
-    width: 500px
-    margin-right: 46px
+    margin-right: 50px
+    min-width: 350px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 20px
+    @include respond-to(small-desctops)
+      width: 50%
+    @include respond-to(tablets)
+      margin-right: 30px
+    @include respond-to(whide-phones)
+      width: 100%
+      margin-right: 0
+    @include respond-to(phones)
+      margin-right: 0
+
     input,
     textarea
       width: 100%
@@ -331,18 +405,20 @@ h2
       font-weight: 400
       line-height: 24px
       text-align: left
+
     input
       height: 40px
       margin-bottom: 21px
+
     textarea
       padding-top: 13px
       height: 170px
       margin-bottom: 21px
+
     button
       border-radius: 5px
       background-color:  #ffffff
-      width: 140px
-      height: 40px
+      width: 50%
       font-family: 'Roboto', sans-serif
       color:  #445162
       font-size: 16px
@@ -350,18 +426,43 @@ h2
       line-height: 40px
       text-align: center
       text-transform: uppercase
-      margin-left: 180px
       transition-duration: 0.4s
       cursor: pointer
+
     button:hover
       background-color: #aeaeae
       color: #fff
+
     button:active
-      box-shadow: 0px 0px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+      box-shadow: 0 0 4.85px 0.15px rgba(33, 33, 33, 0.35)
       position: relative
       top: 2px
+
   .socialContacts
-    width: 240px
+
+    .icons-no-phones
+      @include respond-to(whide-phones)
+        display: none
+      @include respond-to(phones)
+        display: none
+
+    .icons-phones
+      display: none
+
+      a
+        display: block
+        height: 30px
+        width: 30px
+      a:hover
+        transition-duration: 0.4s
+        transform: rotate(20deg)
+      @include respond-to(whide-phones)
+        display: flex
+        justify-content: space-between
+      @include respond-to(phones)
+        display: flex
+        justify-content: space-between
+
     li
       list-style: none
       font-family: 'Roboto', sans-serif
@@ -374,19 +475,25 @@ h2
       width: 200px
       padding-left: 30px
       margin-bottom: 18px
+
     .skype
       background: url("../images/skype_icon.png") no-repeat 0 5px
+
     .icq
       background: url("../images/icq_icon.png") no-repeat 0 5px
+
     .email
       background: url("../images/email_icon.png") no-repeat 0 5px
+
     .phone
       background: url("../images/phone_icon.png") no-repeat 0 5px
+
   .socialNetworks
     display: flex
     justify-content: space-between
     width: 240px
     margin-top: 32px
+
     .networks
       display: block
       height: 40px
@@ -397,6 +504,7 @@ h2
       line-height: 40px
       font-size: 20px
       text-align: center
+
     .networks:hover
       background-color: #a0a0a0
 
