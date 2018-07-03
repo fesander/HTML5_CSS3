@@ -11,7 +11,6 @@ h2 {
   color: #445161;
   font-size: 30px;
   font-weight: 400;
-  line-height: 36px;
   text-align: left; }
 
 .productName {
@@ -60,8 +59,9 @@ h2 {
         .productName .text li {
           margin-left: 7%; } }
   .productName .image {
-    background-color: #ffffff;
-    height: 214px;
+    background: #ffffff url(../images/phones-face.jpg) no-repeat;
+    background-size: cover;
+    height: 320px;
     margin-bottom: 30px; }
 
 .aboutYourProject {
@@ -79,8 +79,9 @@ h2 {
     text-align: left;
     margin-bottom: 20px; }
   .aboutYourProject .image {
-    background-color: #445161;
-    height: 245px;
+    background: #445161 url(../images/phones-back.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
     margin-bottom: 50px; }
 
 .dignityProduct {
@@ -92,6 +93,9 @@ h2 {
     width: 100%;
     margin-bottom: 25px;
     text-align: center; }
+  .dignityProduct ul {
+    display: flex;
+    flex-wrap: wrap; }
   .dignityProduct li {
     font-family: "Roboto", sans-serif;
     color: #333333;
@@ -117,7 +121,6 @@ h2 {
     margin-bottom: 25px;
     text-align: center; }
   .scrinshots .scrinBlock .image {
-    background-color: #445161;
     width: 200px;
     height: 150px;
     float: left;
@@ -136,6 +139,18 @@ h2 {
       .scrinshots .scrinBlock .image {
         float: none;
         width: 100%; } }
+  .scrinshots .scrinBlock .image-1 {
+    background: #445161 url(../images/scrin_1.jpg) no-repeat;
+    background-size: cover; }
+  .scrinshots .scrinBlock .image-2 {
+    background: #445161 url(../images/scrin_2.jpg) no-repeat;
+    background-size: cover; }
+  .scrinshots .scrinBlock .image-3 {
+    background: #445161 url(../images/scrin_3.jpg) no-repeat;
+    background-size: cover; }
+  .scrinshots .scrinBlock .image-4 {
+    background: #445161 url(../images/scrin_4.jpg) no-repeat;
+    background-size: cover; }
   .scrinshots .scrinBlock h3 {
     font-family: "Roboto", sans-serif;
     color: #445161;
@@ -198,7 +213,6 @@ h2 {
         align-items: center;
         flex-direction: column; } }
     .reviews .reviewBlock .photo {
-      background-color: #445161;
       width: 75px;
       height: 75px;
       border-radius: 50%;
@@ -211,6 +225,18 @@ h2 {
         .reviews .reviewBlock .photo {
           margin-bottom: 25px;
           margin-right: 0; } }
+    .reviews .reviewBlock .photo-1 {
+      background: #445161 url("../images/photo-1.jpg") no-repeat;
+      background-size: cover; }
+    .reviews .reviewBlock .photo-2 {
+      background: #445161 url("../images/photo-2.jpg") no-repeat;
+      background-size: cover; }
+    .reviews .reviewBlock .photo-3 {
+      background: #445161 url("../images/photo-3.jpg") no-repeat;
+      background-size: cover; }
+    .reviews .reviewBlock .photo-4 {
+      background: #445161 url("../images/photo-4.jpg") no-repeat;
+      background-size: cover; }
     .reviews .reviewBlock .text {
       background: #ebebeb;
       max-width: 380px;
