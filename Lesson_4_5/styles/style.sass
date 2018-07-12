@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+
+*
+  margin: 0
+  padding: 0
+
+html,
+body
+  height: 100%
+
+.container
+  max-width: 1600px
+  margin: 0 auto
+  font-family: 'Roboto', sans-serif
+
+li
+  list-style: none
+
+.main-padding
+  padding-left: 215px
+  padding-right: 185px
+
+header
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    min-height: 92px
+    border-bottom: 2px solid rgba(194, 194, 194, 0.31)
+
+    .logo
+      display: block
+      width: 210px
+      height: 42px
+      background: url("../images/Logo.png") no-repeat
+
+    .logo:hover
+      transform: rotate(1deg)
+
+    ul.contacts
+      display: flex
+      justify-content: space-between
+
+      li
+        display: flex
+        margin-right: 57px
+
+        .icon
+          background-color: #1a9bdc
+          width: 51px
+          height: 51px
+          border-radius: 50%
+          float: left
+          margin-right: 19px
+          font-size: 29px
+          color: white
+          text-align: center
+          line-height: 51px
+
+        strong
+          display: block
+          color: #6a6a6a
+          font-size: 15px
+          font-weight: 700
+          line-height: 22px
+
+        p
+          color: #6a6a6a
+          font-size: 15px
+          font-weight: 400
+          margin: 5px 0 0 0
+
+      li:last-child
+        margin-right: 0
+
+  nav
+    min-height: 94px
+
+    ul
+      display: flex
+
+      li
+        padding: 0 13px
+        height: 90px
+
+        a
+          text-decoration: none
+          color: #6c6c6c
+          font-size: 20px
+          font-weight: 400
+          text-align: center
+          line-height: 94px
+
+      li:hover a
+        font-weight: 700
+        color: #262626
+
+  .social-links
+    ul
+      display: flex
+      align-items: center
+      height: 100%
+
+      li
+        margin: 0 10px
+
+        a
+          font-size: 30px
+          color: #6c6c6c
+
+        a:hover
+          color: #262626
+
+.welcome
+  position: relative
+  height: 460px
+  background: url("../images/main-background.jpg") no-repeat
+  padding-left: 250px
+  padding-top: 180px
+
+  .business-card
+    width: 125px
+    height: 25px
+    position: absolute
+    background-image: url("../images/Logo.png")
+    background-size: cover
+    left: 817px
+    top: 537px
+
+  h2
+    width: 524px
+    color: #474747
+    font-size: 47.69px
+    font-weight: 500
+    text-align: center
+    margin-bottom: 37px
+
+  p
+    width: 524px
+    color: #3f3f3f
+    font-size: 17px
+    font-weight: 400
+    line-height: 30px
+    text-align: center
+    margin-bottom: 42px
+
+  .wrapper
+    width: 524px
+    display: flex
+    justify-content: center
+
+    button
+      background-color: #1a9bdc
+      box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2)
+      width: 166px
+      height: 47px
+      border-radius: 23.5px
+      outline: none
+      color: #ffffff
+      font-size: 18.25px
+      font-weight: 700
+      text-transform: uppercase
+
+.advantages
+  width: 100%
+  height: 360px
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+
+  .treatment
+    background: #43b1d2
+
+    .icon
+      background: #fff url("../images/Treatment.png") no-repeat 50%
+
+  .help
+    background-color: #3fb6c6
+    .icon
+      background: #fff url("../images/Emergency.png") no-repeat 50%
+
+  .staff
+    background-color: #3cbbbb
+    .icon
+      background: #fff url("../images/Madical.png") no-repeat 50%
+
+  .doctors
+    background-color: #37c3a8
+    .icon
+      background: #fff url("../images/Qualified.png") no-repeat 50%
+
+  article
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    .icon
+      border-radius: 50%
+      background-color: #ffffff
+      width: 75px
+      height: 75px
+      margin-bottom: 23px
+
+    h3
+      color: #ffffff
+      font-size: 30px
+      font-weight: 700
+      margin-bottom: 29px
+
+    p
+      width: 264px
+      color: #ffffff
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: center
+
+.why-choose-us
+  width: 100%
+  box-sizing: border-box
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 2fr 1fr 1fr
+  background: url("../images/doctor.png") no-repeat 50% bottom
+
+  .description
+    grid-column-start: 1
+    grid-column-end: 4
+    padding: 111px 147px 116px 147px
+
+  .prof-1,
+  .prof-3
+    grid-column-start: 1
+    grid-column-end: 2
+
+  .prof-2,
+  .prof-4
+    grid-column-start: 3
+    grid-column-end: 4
+
+  .prof-1
+    .icon
+      background: #1a9bdc url("../images/professinal-icon-1.png") no-repeat 50%
+
+  .prof-2
+    .icon
+      background: #1a9bdc url("../images/professinal-icon-2.png") no-repeat 50%
+
+  .prof-3
+    .icon
+      background: #1a9bdc url("../images/professinal-icon-3.png") no-repeat 50%
+
+  .prof-4
+    .icon
+      background: #1a9bdc url("../images/professinal-icon-4.png") no-repeat 50%
+
+  h2
+    color: #494949
+    font-size: 45px
+    font-weight: 700
+    text-align: center
+
+  p
+    color: #6a6a6a
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+    text-align: center
+
+  .professional
+    margin-bottom: 30px
+
+    .icon
+      border-radius: 50%
+      width: 75px
+      height: 75px
+      float: left
+      margin-right: 19px
+
+    h3
+      color: #6f6f6e
+      font-size: 30px
+      font-weight: 700
+      text-align: left
+      margin-top: 27px
+      margin-bottom: 26px
+
+    p
+      color: #6a6a6a
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: left
+      width: 345px
+
+.benefits
+  width: 1600px
+  height: 592px
+  background: url("../images/layer _9.jpg") #0084bd
+  background-blend-mode: luminosity
+  padding: 0 246px
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+
+  article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .icon
+      width: 91px
+      height: 80px
+      margin-bottom: 47px
+
+    h3
+      color: #ffffff
+      font-size: 60px
+      font-weight: 500
+      text-align: center
+      margin-bottom: 26px
+
+    .line
+      background-color: #ffffff
+      width: 84px
+      height: 6px
+      margin-bottom: 27px
+
+    p
+      width: 160px
+      color: #ffffff
+      font-size: 25px
+      font-weight: 500
+      text-align: center
+
+    .happy
+      background: url("../images/happy-icon.png") no-repeat 50%
+
+    .heart
+      background: url("../images/heart-icon.png") no-repeat 50%
+
+    .helicopter
+      background: url("../images/helicopter-icon.png") no-repeat 50%
+
+    .lungs
+      background: url("../images/lungs-icon.png") no-repeat 50%
+
+.how_we_works
+  padding-top: 99px
+  padding-bottom: 100px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-row-gap: 20px
+  grid-template-areas: "we_work we_work our_creative" "article_1 article_2 treatment" "read-more read-more ."
+
+  .we_work,
+  .our_creative
+    h3
+      color: #494949
+      font-size: 45px
+      font-weight: 700
+      text-align: left
+
+    p
+      color: #6a6a6a
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: left
+
+  .article
+    .image
+      width: 334px
+      height: 210px
+      margin-bottom: 35px
+
+    h4
+      color: #6f6f6e
+      font-size: 20px
+      font-weight: 500
+      text-align: left
+      margin-bottom: 13px
+
+    .date
+      color: #0087be
+      font-size: 15px
+      font-weight: 500
+      text-align: left
+      margin-bottom: 27px
+
+    p
+      color: #6a6a6a
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: left
+
+  .article_1
+    .image
+      background: url("../images/gallery-6.jpg") no-repeat
+
+  .article_2
+    .image
+      background: url("../images/gallery-7.jpg") no-repeat
+
+  .we_work
+    grid-area: we_work
+
+  .our_creative
+    grid-area: our_creative
+    min-width: 407px
+
+  .article_1
+    grid-area: article_1
+
+  .article_2
+    grid-area: article_2
+
+  .treatment
+    grid-area: treatment
+
+    button
+      width: 100%
+      background: url("../images/list-style.png") no-repeat 22px 50%, url("../images/ellipse_2.png") no-repeat 7px 50% #e2e2e2
+      height: 54px
+      border-radius: 27px
+      color: #494949
+      font-size: 20px
+      font-weight: 500
+      text-align: left
+      line-height: 54px
+      text-decoration: none
+      margin-bottom: 12px
+      padding-left: 66px
+      outline: none
+
+    button.active
+      background-color: #0087be
+      color: #ffffff
+      margin-bottom: 19px
+
+    .list-content
+      display: none
+      margin-bottom: 40px
+      color: #6a6a6a
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: left
+
+    div.active
+      display: block
+
+  .read-more
+    grid-area: read-more
+    display: flex
+    justify-content: center
+
+    button
+      background-color: #0087be
+      box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2)
+      width: 154px
+      height: 44px
+      border-radius: 22px
+      outline: none
+      color: #ffffff
+      font-size: 16.87px
+      font-weight: 700
+      text-align: center
+      line-height: 44px
+      text-transform: uppercase
+
+.gallery
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-row-gap: 51px
+  background: url("../images/layer_3.png") no-repeat #2eb39b
+  background-blend-mode: luminosity
+  padding-top: 94px
+  padding-bottom: 94px
+
+  .description
+    grid-column-start: 1
+    grid-column-end: 4
+
+    h2
+      color: #ffffff
+      font-size: 45px
+      font-weight: 700
+      text-align: center
+      padding-bottom: 38px
+
+    p
+      color: #ffffff
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: center
+
+  .image
+    display: block
+    width: 344px
+    height: 209px
+
+  .picture_1
+    background: url("../images/gallery-1.jpg") no-repeat
+
+  .picture_2
+    background: url("../images/gallery-2.jpg") no-repeat
+
+  .picture_3
+    background: url("../images/gallery-3.jpg") no-repeat
+
+  .picture_4
+    background: url("../images/gallery-4.jpg") no-repeat
+
+  .picture_5
+    background: url("../images/gallery-5.jpg") no-repeat
+
+  .picture_6
+    background: url("../images/gallery-6.jpg") no-repeat
+
+.our-team
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  padding-top: 94px
+  padding-bottom: 134px
+  grid-row-gap: 84px
+
+  .description
+    grid-column-start: 1
+    grid-column-end: 5
+    color: #494949
+    font-size: 45px
+    font-weight: 700
+    text-align: center
+
+    h2
+      color: #494949
+      font-size: 45px
+      font-weight: 700
+      text-align: center
+      margin-bottom: 49px
+
+    p
+      color: #6a6a6a
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: center
+
+  .team-member
+    .image
+      display: block
+      width: 279px
+      height: 279px
+      margin-bottom: 29px
+
+    .doctor_1
+      background: url("../images/doctor-1.png") no-repeat
+
+    .doctor_2
+      background: url("../images/doctor-2.png") no-repeat
+
+    .doctor_3
+      background: url("../images/doctor-3.png") no-repeat
+
+    .doctor_4
+      background: url("../images/doctor-4.png") no-repeat
+
+    h3
+      color: #6f6f6e
+      font-size: 25px
+      font-weight: 500
+      text-align: center
+      margin-bottom: 15px
+
+    p
+      color: #6f6f6e
+      font-size: 18px
+      font-weight: 500
+      text-align: center
+      margin-bottom: 20px
+
+    .social
+      display: flex
+      justify-content: center
+
+      li
+        a
+          margin: 0 10px
+          color: #0087be
+          font-size: 24px
+          font-weight: 400
+
+.consultation
+  background-color: #e2e2e2
+  height: 176px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h2
+    color: #494949
+    font-size: 30px
+    font-weight: 700
+    margin-right: 77px
+
+  button
+    background-color: #0087be
+    box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2)
+    width: 192px
+    height: 54px
+    border-radius: 27px
+    outline: none
+    text-transform: uppercase
+    line-height: 54px
+    color: #ffffff
+    font-size: 21.1px
+    font-weight: 700
+    text-align: center
+
+footer
+  background-color: #171717
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-row-gap: 20px
+  grid-template-areas: "contacts links services form"
+  padding: 118px 217px 110px 118px
+
+  h3
+    color: #ffffff
+    font-size: 22px
+    font-weight: 700
+    line-height: 24px
+    text-align: left
+    margin-bottom: 70px
+
+  p,
+  a
+    color: #6f6f6e
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    text-align: left
+    text-decoration: none
+
+  a:hover
+    color: white
+
+  .contacts
+    grid-area: contacts
+    display: flex
+    flex-direction: column
+    padding-right: 45px
+
+    .message,
+    .phone,
+    .location
+      display: flex
+
+      .fas
+        font-size: 40px
+        color: #6f6f6e
+        margin-right: 43px
+        margin-bottom: 60px
+
+      .fa-mobile-alt
+        margin-right: 49px
+
+      .fa-map-marked-alt
+        margin-right: 30px
+
+  .social-links
+    display: flex
+    justify-content: space-around
+
+    a
+      text-decoration: none
+      color: #ffffff
+      font-size: 25.23px
+      font-weight: 400
+      text-align: center
+
+    a:hover
+      color: #6f6f6e
+
+  .links
+    grid-area: links
+
+    li
+      margin-bottom: 25px
+      list-style: url("../images/list-style.png") inside
+
+  .services
+    grid-area: services
+
+    li
+      margin-bottom: 25px
+      list-style: url("../images/list-style.png") inside
+
+  .form
+    grid-area: form
+
+    input,
+    textarea
+      width: 231px
+      border: none
+      outline: none
+      border-bottom: 1px solid #6f6f6e
+      background: none
+      color: #6f6f6e
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+      text-align: left
+      margin-bottom: 25px
+
+    input
+      height: 30px
+
+    textarea
+      height: 90px
+
+    button
+      background-color: #0087be
+      box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2)
+      width: 125px
+      height: 36px
+      border-radius: 18px
+      color: #ffffff
+      font-size: 13.73px
+      font-weight: 700
+      text-align: center
+      line-height: 32px
+      text-transform: uppercase
+      outline: none
+
+
+.copyright
+  background-color: #1a1a1a
+  height: 116px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  p
+    color: #615555
+    font-size: 13px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
