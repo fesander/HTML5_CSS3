@@ -1,0 +1,25 @@
+.b-loginLinks {
+  font-size: 12px;
+
+  &_position {
+    margin-top: 37px;
+    float: right;
+    margin-right: 18px;
+  }
+
+  &__link {
+    color:  #81b300;
+    border-right: 1px solid #81b300;
+    text-decoration: none;
+    padding-right: 8px;
+  }
+
+  &__link:last-child {
+    border: none;
+    padding-right: 0;
+  }
+
+  &__link:hover {
+    color: #1f1f1f;
+  }
+}

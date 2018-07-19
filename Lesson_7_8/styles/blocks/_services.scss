@@ -1,0 +1,55 @@
+.b-services {
+  background-color:  #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 51px 34px 50px 34px;
+  box-sizing: border-box;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &_border {
+      border-bottom: 1px solid #e2e2e2;
+    }
+  }
+
+  &__icon {
+    width: 71px;
+    height: 66px;
+    margin-bottom: 20px;
+    
+    &_group {
+      background: url("../images/icon-group.png") no-repeat 50%;
+    }
+    &_globe {
+      background: url("../images/icon-globe.png") no-repeat 50%;
+    }
+    &_cogs {
+      background: url("../images/icon-cogs.png") no-repeat 50%;
+    }
+    &_leaf {
+      background: url("../images/icon-leaf.png") no-repeat 50%;
+    }
+  }
+
+  &__title {
+    color:  #81b300;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color:  #888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+    width: 203px;
+  }
+}

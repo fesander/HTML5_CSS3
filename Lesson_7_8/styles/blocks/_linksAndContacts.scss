@@ -1,0 +1,124 @@
+.b-linksAndContacts {
+  background-color: #3b3b3b;
+  width: 100%;
+  display: flex;
+  padding: 41px 30px 37px 30px;
+  box-sizing: border-box;
+
+  &__item {
+    min-width: 200px;
+  }
+
+  &__text {
+    display: block;
+    color:  #999999;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+  }
+
+  &__contactDetails {
+    line-height: 20.8px;
+    margin-bottom: 25px;
+    width: 199px;
+    margin-right: 32px;
+  }
+
+  &__telephones {
+    line-height: 20.8px;
+  }
+
+  &__title {
+    color:  #666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    height: 30px;
+    border-bottom:1px solid #484848;
+    line-height: 30px;
+    margin-right: 20px;
+
+    &:hover {
+      color: #666;
+    }
+  }
+
+
+  &__fromTheBlock {
+    margin-right: 29px;
+  }
+
+  &__smallHeader {
+    font-size: 13px;
+    line-height: 15.6px;
+    margin-bottom: 7px;
+  }
+
+  &__signature {
+    font-size: 11px;
+    line-height: 13.2px;
+    margin-bottom: 11px;
+  }
+
+  &__blogPost {
+    line-height: 19.2px;
+    width: 201px;
+    margin-bottom: 7px;
+  }
+
+  &__readMore {
+    display: block;
+    color:  #81b300;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: right;
+    text-decoration: none;
+    transition-duration: .2s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+
+  &__formItem {
+    background-color:  #1f1f1f;
+    width: 210px;
+    height: 31px;
+    padding: 0 10px;
+    line-height: 31px;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  &__formButton {
+    background-color:  #1f1f1f;
+    width: 80px;
+    height: 31px;
+    color:  #81b300;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.583px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition-duration: .2s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}

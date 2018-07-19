@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #1f1f1f;
+  font-family: 'Roboto Slab', serif; }
+
+header {
+  width: 100%;
+  height: 210px;
+  background-color: #81b300;
+  padding-top: 5px;
+  box-sizing: border-box; }
+  header .top {
+    background-color: #ffffff;
+    width: 100%;
+    height: 135px;
+    padding-top: 36px;
+    padding-left: 29px;
+    box-sizing: border-box;
+    position: relative; }
+    header .top .logo {
+      float: left; }
+      header .top .logo h2 {
+        color: #333333;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 46px;
+        text-align: left;
+        margin-bottom: 15px; }
+      header .top .logo p {
+        color: #999999;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        text-align: left; }
+
+main .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 51px; }
+
+footer .copyright {
+  width: 100%;
+  height: 60px;
+  background-color: #2e2e2e;
+  padding: 0 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px; }
+
+.b-social {
+  background-color: #81b300;
+  width: 251px;
+  height: 49px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .b-social__icon {
+    display: block;
+    background-color: #1f1f1f;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 32px; }
+    .b-social__icon:hover {
+      background-color: #00acee; }
+
+.b-social_positionTopRight {
+  position: absolute;
+  top: 0;
+  right: 18px; }
+
+.b-loginLinks {
+  font-size: 12px; }
+  .b-loginLinks_position {
+    margin-top: 37px;
+    float: right;
+    margin-right: 18px; }
+  .b-loginLinks__link {
+    color: #81b300;
+    border-right: 1px solid #81b300;
+    text-decoration: none;
+    padding-right: 8px; }
+  .b-loginLinks__link:last-child {
+    border: none;
+    padding-right: 0; }
+  .b-loginLinks__link:hover {
+    color: #1f1f1f; }
+
+.b-menu {
+  display: flex;
+  height: 70px; }
+  .b-menu_floatLeft {
+    float: left;
+    margin-right: 74px; }
+  .b-menu__item {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .b-menu__item:hover {
+      color: #000000; }
+
+.b-search {
+  background-color: #ffffff;
+  width: 282px;
+  height: 30px; }
+  .b-search_position {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px; }
+  .b-search__input {
+    height: 100%;
+    width: 65%;
+    border: none;
+    border-right: 1px solid #ddd;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-sizing: border-box; }
+  .b-search__button {
+    width: 30%;
+    height: 99%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #81b300;
+    font-size: 12px;
+    font-weight: 400; }
+    .b-search__button:hover {
+      color: #000; }
+
+.b-slider {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 30px; }
+  .b-slider__image {
+    background: #ffffff url("http://placehold.it/880x360") no-repeat 50%;
+    width: 898px;
+    height: 378px;
+    margin-bottom: 22px; }
+  .b-slider__paginationBlock {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .b-slider__paginationItem {
+    display: block;
+    background-color: #333;
+    border-radius: 50%; }
+  .b-slider__arrow {
+    width: 20px;
+    height: 20px;
+    transition-duration: .3s; }
+    .b-slider__arrow_left {
+      background: #333 url("../images/left_arrow.png") no-repeat 50%; }
+      .b-slider__arrow_left:hover {
+        background: #333 url("../images/left_arrow.png") no-repeat 40% 50%; }
+    .b-slider__arrow_right {
+      background: #333 url("../images/right_arrow.png") no-repeat 50%; }
+      .b-slider__arrow_right:hover {
+        background: #333 url("../images/right_arrow.png") no-repeat 60% 50%; }
+  .b-slider__point {
+    width: 12px;
+    height: 12px;
+    transition-duration: .5s; }
+    .b-slider__point_active {
+      border: 1px solid #333;
+      background-color: #f2f2f2; }
+    .b-slider__point:hover {
+      transform: scale(1.5, 1.5); }
+
+.b-services {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 51px 34px 50px 34px;
+  box-sizing: border-box; }
+  .b-services__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .b-services__item_border {
+      border-bottom: 1px solid #e2e2e2; }
+  .b-services__icon {
+    width: 71px;
+    height: 66px;
+    margin-bottom: 20px; }
+    .b-services__icon_group {
+      background: url("../images/icon-group.png") no-repeat 50%; }
+    .b-services__icon_globe {
+      background: url("../images/icon-globe.png") no-repeat 50%; }
+    .b-services__icon_cogs {
+      background: url("../images/icon-cogs.png") no-repeat 50%; }
+    .b-services__icon_leaf {
+      background: url("../images/icon-leaf.png") no-repeat 50%; }
+  .b-services__title {
+    color: #81b300;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-bottom: 20px; }
+  .b-services__text {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+    width: 203px; }
+
+.b-latestWork {
+  background-color: #fff;
+  width: 100%;
+  padding: 51px 34px 50px 34px;
+  box-sizing: border-box; }
+  .b-latestWork__picture {
+    background: #e2e2e2 url("http://placehold.it/200x130") no-repeat 50%;
+    width: 210px;
+    height: 140px;
+    margin-bottom: 21px; }
+  .b-latestWork__title {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    margin-bottom: 14px; }
+  .b-latestWork__text {
+    color: #878787;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    margin-bottom: 14px;
+    max-width: 212px; }
+  .b-latestWork__moreDetails {
+    display: block;
+    color: #81b300;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: right;
+    text-decoration: none;
+    max-width: 212px;
+    transition-duration: .2s; }
+    .b-latestWork__moreDetails:hover {
+      transform: scale(1.05, 1.05); }
+
+.b-linksAndContacts {
+  background-color: #3b3b3b;
+  width: 100%;
+  display: flex;
+  padding: 41px 30px 37px 30px;
+  box-sizing: border-box; }
+  .b-linksAndContacts__item {
+    min-width: 200px; }
+  .b-linksAndContacts__text {
+    display: block;
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left; }
+  .b-linksAndContacts__contactDetails {
+    line-height: 20.8px;
+    margin-bottom: 25px;
+    width: 199px;
+    margin-right: 32px; }
+  .b-linksAndContacts__telephones {
+    line-height: 20.8px; }
+  .b-linksAndContacts__title {
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    margin-bottom: 30px; }
+  .b-linksAndContacts__link {
+    text-decoration: none;
+    height: 30px;
+    border-bottom: 1px solid #484848;
+    line-height: 30px;
+    margin-right: 20px; }
+    .b-linksAndContacts__link:hover {
+      color: #666; }
+  .b-linksAndContacts__fromTheBlock {
+    margin-right: 29px; }
+  .b-linksAndContacts__smallHeader {
+    font-size: 13px;
+    line-height: 15.6px;
+    margin-bottom: 7px; }
+  .b-linksAndContacts__signature {
+    font-size: 11px;
+    line-height: 13.2px;
+    margin-bottom: 11px; }
+  .b-linksAndContacts__blogPost {
+    line-height: 19.2px;
+    width: 201px;
+    margin-bottom: 7px; }
+  .b-linksAndContacts__readMore {
+    display: block;
+    color: #81b300;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: right;
+    text-decoration: none;
+    transition-duration: .2s; }
+    .b-linksAndContacts__readMore:hover {
+      transform: scale(1.05, 1.05); }
+  .b-linksAndContacts__formItem {
+    background-color: #1f1f1f;
+    width: 210px;
+    height: 31px;
+    padding: 0 10px;
+    line-height: 31px;
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px; }
+  .b-linksAndContacts__formButton {
+    background-color: #1f1f1f;
+    width: 80px;
+    height: 31px;
+    color: #81b300;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.583px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition-duration: .2s; }
+    .b-linksAndContacts__formButton:hover {
+      transform: scale(1.05, 1.05); }
+
+/*# sourceMappingURL=style.css.map */

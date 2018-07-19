@@ -1,0 +1,65 @@
+.b-slider {
+  background-color:  #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 30px;
+
+  &__image {
+    background: #ffffff url("http://placehold.it/880x360") no-repeat 50%;
+    width: 898px;
+    height: 378px;
+    margin-bottom: 22px;
+  }
+
+  &__paginationBlock {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__paginationItem {
+    display: block;
+    background-color:  #333;
+    border-radius: 50%;
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 20px;
+    transition-duration: .3s;
+
+    &_left {
+      background: #333 url("../images/left_arrow.png") no-repeat 50%;
+      &:hover {
+        background: #333 url("../images/left_arrow.png") no-repeat 40% 50%;
+      }
+    }
+
+    &_right {
+      background: #333 url("../images/right_arrow.png") no-repeat 50%;
+      &:hover {
+        background: #333 url("../images/right_arrow.png") no-repeat 60% 50%;
+      }
+    }
+  }
+
+  &__point {
+    width: 12px;
+    height: 12px;
+    transition-duration: .5s;
+
+    &_active {
+      border: 1px solid #333;
+      background-color:  #f2f2f2;
+    }
+
+    &:hover {
+      transform: scale(1.5, 1.5);
+    }
+  }
+}

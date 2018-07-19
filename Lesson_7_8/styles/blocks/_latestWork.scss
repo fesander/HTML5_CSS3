@@ -1,0 +1,48 @@
+.b-latestWork {
+  background-color:  #fff;
+  width: 100%;
+  padding: 51px 34px 50px 34px;
+  box-sizing: border-box;
+
+  &__picture {
+    background: #e2e2e2 url("http://placehold.it/200x130") no-repeat 50%;
+    width: 210px;
+    height: 140px;
+    margin-bottom: 21px;
+  }
+
+  &__title {
+    color:  #444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    color:  #878787;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    margin-bottom: 14px;
+    max-width: 212px;
+  }
+
+  &__moreDetails {
+    display: block;
+    color:  #81b300;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: right;
+    text-decoration: none;
+    max-width: 212px;
+    transition-duration: .2s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
