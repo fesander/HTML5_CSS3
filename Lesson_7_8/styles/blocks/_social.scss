@@ -1,0 +1,30 @@
+.b-social {
+  background-color:  #81b300;
+  width: 251px;
+  height: 49px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__icon {
+    display: block;
+    background-color:  #1f1f1f;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+
+    &:hover {
+      background-color:  #00acee;
+    }
+  }
+}
+
+.b-social_positionTopRight {
+  position: absolute;
+  top: 0;
+  right: 18px;
+}

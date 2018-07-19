@@ -1,0 +1,38 @@
+.b-search {
+  background-color:  #ffffff;
+  width: 282px;
+  height: 30px;
+
+  &_position {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+  }
+
+  &__input {
+    height: 100%;
+    width: 65%;
+    border: none;
+    border-right: 1px solid #ddd;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    width: 30%;
+    height: 99%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color:  #81b300;
+    font-size: 12px;
+    font-weight: 400;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+
+}
