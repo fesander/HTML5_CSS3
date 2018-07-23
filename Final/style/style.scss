@@ -1,0 +1,30 @@
+@import "../packages/bootstrap-4.1.2/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:800|Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import "variables";
+
+@import "../packages/_header.scss";
+@import "../packages/_logo.scss";
+@import "../packages/_mainNav.scss";
+@import "../packages/_searchAndFaceBook.scss";
+@import "../packages/_slogan.scss";
+@import "../packages/_readMoreButton.scss";
+@import "../packages/_whoWeAre.scss";
+@import "../packages/_heading.scss";
+@import "../packages/_textContent.scss";
+@import "../packages/_whatWeDo.scss";
+@import "../packages/_howWeWork.scss";
+@import "../packages/_ourCreativeTeam.scss";
+@import "../packages/_slider.scss";
+@import "../packages/_whatClientsSay.scss";
+@import "../packages/_footer.scss";
+
+.container {
+  font-family: 'Lato', sans-serif;
+  max-width: 1600px;
+}
+header {
+  width: 1000px;
+  height: 200px;
+  background-color: red;
+}

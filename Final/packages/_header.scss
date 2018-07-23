@@ -1,0 +1,35 @@
+.b-header {
+  width: 100%;
+  height: 889px;
+  position: relative;
+
+  &_position {
+    padding: 34px 93px 0 65px;
+    z-index: 2;
+  }
+
+  &_background {
+    background: url("../images/header_image.jpg") no-repeat,
+                url("../images/header_bg.jpg") no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &__modelImage {
+    width: 875px;
+    height: 957px;
+    background: url("../images/header_model.png") no-repeat;
+
+    &_position {
+      position: absolute;
+      z-index: 3;
+      left: 725px;
+      top: 85px;
+    }
+  }
+
+  &__readMoreButton {
+      position: absolute;
+      bottom: 204px;
+      left: 530px;
+  }
+}

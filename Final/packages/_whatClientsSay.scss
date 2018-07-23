@@ -1,0 +1,111 @@
+.b-whatClientsSay {
+  height: 740px;
+  width: 100%;
+  overflow: hidden;
+
+  &_position{
+    position: relative;
+  }
+
+  &__heading {
+    width: 100%;
+    margin-top: 101px;
+    margin-left: 312px;
+  }
+
+  &__triangle {
+    transform: rotate(45deg);
+
+    &_black {
+      height: 445px;
+      width: 445px;
+      background-color: #171717;
+      position: absolute;
+      top: -222px;
+      right: -222px;
+    }
+
+    &_red {
+      position: absolute;
+      width: 670px;
+      height: 670px;
+      background-color: #bc2e3a;
+      top: 55px;
+      left: -355px;
+    }
+  }
+  
+  &__mainImage {
+    width: 455px;
+    height: 455px;
+    background-image: url("../images/what_clients_say_mian_image.png");
+
+    &_position {
+      position: absolute;
+      margin-left: 199px;
+      margin-top: -20px;
+    }
+  }
+
+  &__blockquote {
+    margin-left: 675px;
+    margin-top: 80px;
+  }
+
+  &__blockquoteLogo {
+    color:  #6a6a6a;
+    font-size: 60px;
+    font-weight: 400;
+
+    &_left {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
+  &__textContent {
+    width: 760px;
+    font-size: 20px;
+    font-style: italic;
+
+    &_padding {
+      padding-top: 30px;
+      padding-left: 80px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__blockquoteCite {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__blockquoteCite {
+    &_padding {
+      padding-left: 80px;
+    }
+  }
+
+  &__smallImage {
+    width: 80px;
+    height: 80px;
+
+    &_1 {
+      background: url("../images/what_clients_say_image1.png") no-repeat 50%;
+      margin-left: 732px;
+      float: left;
+    }
+
+    &_2 {
+      background: url("../images/what_clients_say_image2.png") no-repeat 50%;
+      margin-left: 10px;
+      float: left;
+    }
+
+    &_3 {
+      background: url("../images/what_clients_say_image3.png") no-repeat 50%;
+      margin-left: 10px;
+      float: left;
+    }
+  }
+}
