@@ -1,0 +1,17 @@
+.b-logo {
+  display: block;
+  box-sizing: border-box;
+  color:  #fff;
+  font-size: 43px;
+  font-weight: 900;
+  text-align: left;
+
+  &:hover {
+    text-decoration: none;
+    color: $linkHoverColor;
+  }
+
+  &_floatLeft {
+    float: left;
+  }
+}

@@ -1,0 +1,25 @@
+.b-mainNav {
+  display: flex;
+  justify-content: space-between;
+  &_position {
+    float: right;
+  }
+
+  &__item {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: $linkHoverColor;
+      border-bottom: 1px solid $linkHoverColor;
+    }
+
+    &_padding {
+      padding: 25px 10px;
+    }
+  }
+}
